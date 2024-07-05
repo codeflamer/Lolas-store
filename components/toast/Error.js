@@ -14,7 +14,7 @@ function Error(props) {
   return (
     <>
     {!toast && (
-        <div className='rounded bg-white fixed bottom-10 left-6 flex w-2/5'>
+        <div className='rounded bg-white fixed bottom-10 left-6 right-6 flex xs:w-full sm:w-3/5 lg:w-2/5'>
             <div className='absolute bg-black inset-0 rounded blur-sm opacity-30'></div>
             <div className='flex bg-white relative p-3  items-center rounded' >
                 <div className='bg-error w-2 mr-3 h-20'></div>

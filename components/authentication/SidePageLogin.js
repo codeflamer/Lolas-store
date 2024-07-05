@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Dashboard from '../../public/images/Dashboard.png';
 
-export const SidePage = () => {
+const SidePageLogin = () => {
 	return (
 		<div className='hidden sm:flex py-4 md:w-6/12 w-full h-screen lg:py-16 md:py-8 md:h-auto bg-input-border flex-col items-center text-white relative overflow-hidden'>
 			<div className='lg:w-9/12 w-full px-2 mx-auto mb-12 flex flex-col items-center'>
@@ -18,7 +18,7 @@ export const SidePage = () => {
 				</p>
 			</div>
 			<figure>
-				<div className='absolute left-10 bottom-15 md:bottom-32 md:left-14 md:-right-20 -right-20 lg:left-20 lg:-right-20 lg:top-1/3'>
+				<div className='absolute left-10 bottom-15 md:bottom-30 md:left-14 md:-right-20 -right-20 lg:left-20 lg:-right-20 lg:top-1/3'>
 					<Image
 						src={Dashboard}
 						alt='Dashboard Image'
@@ -27,8 +27,10 @@ export const SidePage = () => {
 						objectFit='contain'
 					/>
 				</div>
-				<div className='bg-pink h-20 w-20 rounded-full absolute bottom-24 md:bottom-34 -left-10'></div>
+				<div className='bg-pink h-20 w-20 rounded-full absolute bottom-24 md:bottom-34 lg:bottom-44 -left-10'></div>
 			</figure>
 		</div>
 	);
 };
+
+export default SidePageLogin
